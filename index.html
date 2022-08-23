@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script>
-    </script>
     <title>BasePro</title>
     <meta name="description" content="KB">
     
@@ -32,6 +30,30 @@
     function myFunction2() {
       /* Get the text field */
       var copyText = document.getElementById("copiar2");
+    
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    
+       /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText.value);
+    
+    }
+	  function myFunction3() {
+      /* Get the text field */
+      var copyText = document.getElementById("copiar3");
+    
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    
+       /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText.value);
+    
+    }
+	  function myFunction4() {
+      /* Get the text field */
+      var copyText = document.getElementById("copiar4");
     
       /* Select the text field */
       copyText.select();
